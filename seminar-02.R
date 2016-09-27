@@ -43,7 +43,7 @@ lang <- read.csv("seminar-02.csv")
 # import sample CSV data into dataframe -- as long as it is in the same 
 # working directory (folder), all you need is the file name to open in
 # RStudio
-
+# this is hypothetical data about bilingual children and their scores on a listening and speaking proficiency test
 
 # ==========================================================================
 
@@ -55,8 +55,6 @@ str() # print list of all variables
 print(head()) # print list of first six observations
 print(tail()) # print list of last six observations
 
-#we can and will use our own data, but for now let's use some that R provides
-#car - Speed (mph) of cars and the distances (ft) taken to stop (1920s).
 
 str(lang)
 print(head(lang))
@@ -96,8 +94,7 @@ hist(lang$speaking)
 hist(lang$listening)
 
 
-#with this simple dataset, we can also make a basic plot to look at
-#the relationship between two variables
+#with this simple dataset, we can also make a basic plot to look at the relationship between two variables
 #plot(dataset$variable1, dataset$variable2)
 #if the variables are continuous, this makes a scatterplot and we can fit a correlation line
 plot(lang$speaking, lang$listening)
